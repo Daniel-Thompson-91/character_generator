@@ -6,4 +6,4 @@ What is Character Generator?
 This program will generate a random character with brief backstory every time it is run by the user. The races, environments, and hobbies are all randomly generated each time the generateCharacter() function is called.
 
 How to use program?
-This program is 100% javaScript. In order to use it locally, you will need to use Node.js. To run it online, you will need to call the function in the console in your browsers developer tools.
+This program is 100% javaScript. In order to use it you will need to copy the file locally and run it with Node.js. When you call the function generateCharacter(), it should generatete random character details.
