@@ -66,6 +66,8 @@ const timeFrame = (time) => {
   return timeGen;
 };
 
-console.log(`You are ${generateRace1(race1)} from ${adjective(adjectives)} ${environment(environments)}. You enjoy ${activity1(act1)}, ${activity2(act2)}, and ${activity3(act3)}. Your race has been at war with the ${generateRace2(race2)} society for a little over a ${timeFrame(timeFrames)}.`);
-console.log('You are the only one who can bridge the gap between the races.');
-console.log('Your adventure start now!');
+const generateCharacter = () => {
+  console.log(`You are ${generateRace1(race1)} from ${adjective(adjectives)} ${environment(environments)}. You enjoy ${activity1(act1)}, ${activity2(act2)}, and ${activity3(act3)}. Your race has been at war with the ${generateRace2(race2)} society for a little over a ${timeFrame(timeFrames)}.`);
+  console.log('You are the only one who can bridge the gap between the races.');
+  console.log('Your adventure starts now!');
+}
