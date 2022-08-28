@@ -7,8 +7,8 @@ let act2 = [];
 let act3 = [];
 const timeFrames = ['day', 'week', 'month', 'year', 'decade', 'century', 'millenia', 'age'];
 
-const WelcomeSection = document.getElementById('before-generate');
-const CharacterSection = document.getElementById('after-generate');
+const welcomeSection = document.getElementById('before-generate');
+const characterSection = document.getElementById('after-generate');
 const race1InDoc = document.getElementById('race1');
 const race2InDoc = document.getElementById('race2');
 const adjectiveInDoc = document.getElementById('adjective');
@@ -20,11 +20,13 @@ const timeFrameInDoc = document.getElementById('timeFrame');
 const generate = document.getElementsByClass('generate');
 
 const hideWelcomeSection = () => {
+  generate.removeEventListener('click', hideWelcomeSection);
   welcomeSection.style.display = 'none';
 };
 
 const showCharacterSection = () => {
-  CharacterSection.style.display = 'flex';
+  generate.removeEventListener('click', showCharacterSection);
+  characterSection.style.display = 'flex';
 };
 
 const generateRace1 = () => {
@@ -94,8 +96,8 @@ const generateTimeFrame = () => {
 };
 
 //generate.onclick = runProgram;
-generate.addEventListener('click', hideWelcomeSection, {once: true});
-generate.addEventListener('click', showCharacterSection, {once: true});
+generate.addEventListener('click', hideWelcomeSection);
+generate.addEventListener('click', showCharacterSection);
 generate.addEventListener('click', generateRace1);
 generate.addEventListener('click', generateAdjective);
 generate.addEventListener('click', generateEnvironment);
@@ -104,7 +106,6 @@ generate.addEventListener('click', generateActivity2);
 generate.addEventListener('click', generateActivity3);
 generate.addEventListener('click', generateRace2);
 generate.addEventListener('click', generateTimeFrame);
-
 /*const generateCharacter = () => {
   console.log(`You are ${generateRace1(race1)} from ${adjective(adjectives)} ${environment(environments)}. You enjoy ${activity1(act1)}, ${activity2(act2)}, and ${activity3(act3)}. Your race has been at war with the ${generateRace2(race2)} society for a little over a ${timeFrame(timeFrames)}.`);
   console.log('You are the only one who can bridge the gap between the races.');
