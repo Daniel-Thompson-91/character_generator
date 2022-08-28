@@ -94,13 +94,18 @@ const generateTimeFrame = () => {
   timeFrameInDoc.innerHTML = timeGen;
 };
 
+const generateCharacter = () => {
+  generateRace1;
+  generateAdjective;
+  generateEnvironment;
+  generateActivity1;
+  generateActivity2;
+  generateActivity3;
+  generateRace2;
+  generateTimeFrame;
+}
+
 generate1.addEventListener('click', hideWelcomeSection);
 generate1.addEventListener('click', showCharacterSection);
-generate2.addEventListener('click', generateRace1);
-generate2.addEventListener('click', generateAdjective);
-generate2.addEventListener('click', generateEnvironment);
-generate2.addEventListener('click', generateActivity1);
-generate2.addEventListener('click', generateActivity2);
-generate2.addEventListener('click', generateActivity3);
-generate2.addEventListener('click', generateRace2);
-generate2.addEventListener('click', generateTimeFrame);
+generate1.addEventListener('click', generateCharacter);
+generate2.addEventListener('click', generateCharacter);
