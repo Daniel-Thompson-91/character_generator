@@ -1,6 +1,6 @@
 const race1 = ['Elf', 'Human', 'Dwarf', 'Ogre', 'Giant', 'Gnome', 'Fairy', 'Dragon', 'Sentient Animal', 'shape-shifter'];
 let race2 = [];
-const adjectives = ['an enchanted', 'a vast', 'a lush', 'a fortified', 'a quaint', 'an endless', 'a dark', 'a mysterious', 'a small', 'a lonely'];
+const adjectives = ['enchanted', 'vast', 'lush', 'fortified', 'quaint', 'endless', 'dark', 'mysterious', 'small', 'lonely'];
 const environments = ['forest', 'desert', 'meadow', 'city', 'village', 'mountain range', 'swamp', 'fishing town'];
 const act1 = ['hiking', 'fishing', 'hunting', 'mining', 'raising animals', 'adventuring', 'sparring', 'creating', 'reading', 'travelling'];
 let act2 = [];
@@ -37,17 +37,21 @@ const generateRace2 = () => {
   race2InDoc.innerHTML = race2Gen;
 };
 
-const adjective = () => {
+const generateAdjective = () => {
   let adjGen = adjectives[Math.floor(Math.random()*adjectives.length)];
-  adjectiveInDoc.innerHTML = adjGen;
+  if (adjGen[0] === 'A' || adjGen[0] === 'E' || adjGen[0] === 'I' || adjGen[0] === 'O' || adjGen[0] === 'U') {
+    adjectiveInDoc.innerHTML = `an ${adjGen}`;
+  } else {
+    adjectiveInDoc.innerHTML = `a ${adjGen}`;
+  };
 };
 
-const environment = () => {
+const generateEnvironment = () => {
   let enviroGen = environments[Math.floor(Math.random()*environments.length)];
   environmentInDoc.innerHTML = enviroGen;
 };
 
-const activity1 = () => {
+const generateActivity1 = () => {
   let act1Gen = act1[Math.floor(Math.random() * act1.length)];
   act2 = act1;
   for (let i = 0; i < act1.length; i++) {
@@ -58,7 +62,7 @@ const activity1 = () => {
   act1InDoc.innerHTML = act1Gen;
 };
 
-const activity2 = () => {
+const generateActivity2 = () => {
   let act2Gen = act2[Math.floor(Math.random() * act2.length)];
   act3 = act2;
   for (let i = 0; i < act2.length; i++) {
@@ -69,25 +73,25 @@ const activity2 = () => {
   act2InDoc.innerHTML = act2Gen;
 };
 
-const activity3 = () => {
+const generateActivity3 = () => {
   let act3Gen = act3[Math.floor(Math.random() * act3.length)];
   act3InDoc.innerHTML = act3Gen;
 };
 
-const timeFrame = () => {
+const generateTimeFrame = () => {
   let timeGen = timeFrames[Math.floor(Math.random()*timeFrames.length)];
   timeFrameInDoc.innerHTML = timeGen;
 };
 
 //generate.onclick = runProgram;
 generate.addEventListener('click', generateRace1);
-generate.addEventListener('click', adjective);
-generate.addEventListener('click', environment);
-generate.addEventListener('click', activity1);
-generate.addEventListener('click', activity2);
-generate.addEventListener('click', activity3);
+generate.addEventListener('click', generateAdjective);
+generate.addEventListener('click', generateEnvironment);
+generate.addEventListener('click', generateActivity1);
+generate.addEventListener('click', generateActivity2);
+generate.addEventListener('click', generateActivity3);
 generate.addEventListener('click', generateRace2);
-generate.addEventListener('click', timeFrame);
+generate.addEventListener('click', generateTimeFrame);
 
 /*const generateCharacter = () => {
   console.log(`You are ${generateRace1(race1)} from ${adjective(adjectives)} ${environment(environments)}. You enjoy ${activity1(act1)}, ${activity2(act2)}, and ${activity3(act3)}. Your race has been at war with the ${generateRace2(race2)} society for a little over a ${timeFrame(timeFrames)}.`);
