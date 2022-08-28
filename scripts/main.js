@@ -50,7 +50,7 @@ const generateRace2 = () => {
 
 const generateAdjective = () => {
   let adjGen = adjectives[Math.floor(Math.random()*adjectives.length)];
-  if (adjGen[0] === 'A' || adjGen[0] === 'E' || adjGen[0] === 'I' || adjGen[0] === 'O' || adjGen[0] === 'U') {
+  if (adjGen[0] === 'a' || adjGen[0] === 'e' || adjGen[0] === 'i' || adjGen[0] === 'o' || adjGen[0] === 'u') {
     adjectiveInDoc.innerHTML = `an ${adjGen}`;
   } else {
     adjectiveInDoc.innerHTML = `a ${adjGen}`;
