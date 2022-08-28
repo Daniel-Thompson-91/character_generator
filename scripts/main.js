@@ -7,7 +7,7 @@ let act2 = [];
 let act3 = [];
 const timeFrames = ['day', 'week', 'month', 'year', 'decade', 'century', 'millenia', 'age'];
 
-const WelcomeSection = dosument.getElementById('before-generate');
+const WelcomeSection = document.getElementById('before-generate');
 const CharacterSection = document.getElementById('after-generate');
 const race1InDoc = document.getElementById('race1');
 const race2InDoc = document.getElementById('race2');
@@ -20,11 +20,11 @@ const timeFrameInDoc = document.getElementById('timeFrame');
 const generate = document.getElementsByClass('generate');
 
 const hideWelcomeSection = () => {
-  
+  welcomeSection.style.display = 'none';
 };
 
 const showCharacterSection = () => {
-  
+  CharacterSection.style.display = 'flex';
 };
 
 const generateRace1 = () => {
@@ -94,7 +94,8 @@ const generateTimeFrame = () => {
 };
 
 //generate.onclick = runProgram;
-
+generate.addEventListener('click', hideWelcomeSection, {once: true});
+generate.addEventListener('click', showCharacterSection, {once: true});
 generate.addEventListener('click', generateRace1);
 generate.addEventListener('click', generateAdjective);
 generate.addEventListener('click', generateEnvironment);
