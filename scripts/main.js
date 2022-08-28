@@ -17,7 +17,7 @@ const act1InDoc = document.getElementById('act1');
 const act2InDoc = document.getElementById('act2');
 const act3InDoc = document.getElementById('act3');
 const timeFrameInDoc = document.getElementById('timeFrame');
-const generate = document.getElementsByClass('generate');
+const generate = document.getElementsByClassName('generate');
 
 const hideWelcomeSection = () => {
   generate.removeEventListener('click', hideWelcomeSection);
