@@ -21,12 +21,10 @@ const generate1 = document.getElementById('welcome-section-generate');
 const generate2 = document.getElementById('character-section-generate');
 
 const hideWelcomeSection = () => {
-  generate.removeEventListener('click', hideWelcomeSection);
   welcomeSection.style.display = 'none';
 };
 
 const showCharacterSection = () => {
-  generate.removeEventListener('click', showCharacterSection);
   characterSection.style.display = 'flex';
 };
 
