@@ -95,8 +95,8 @@ const generateTimeFrame = () => {
   timeFrameInDoc.innerHTML = timeGen;
 };
 
-generate.addEventListener('click', hideWelcomeSection);
-generate.addEventListener('click', showCharacterSection);
+generate[0].addEventListener('click', hideWelcomeSection);
+generate[0].addEventListener('click', showCharacterSection);
 generate.addEventListener('click', generateRace1);
 generate.addEventListener('click', generateAdjective);
 generate.addEventListener('click', generateEnvironment);
