@@ -95,14 +95,14 @@ const generateTimeFrame = () => {
 };
 
 const generateCharacter = () => {
-  generateRace1;
-  generateAdjective;
-  generateEnvironment;
-  generateActivity1;
-  generateActivity2;
-  generateActivity3;
-  generateRace2;
-  generateTimeFrame;
+  generateRace1();
+  generateAdjective();
+  generateEnvironment();
+  generateActivity1();
+  generateActivity2();
+  generateActivity3();
+  generateRace2();
+  generateTimeFrame();
 }
 
 generate1.addEventListener('click', hideWelcomeSection);
