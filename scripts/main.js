@@ -95,7 +95,6 @@ const generateTimeFrame = () => {
   timeFrameInDoc.innerHTML = timeGen;
 };
 
-//generate.onclick = runProgram;
 generate.addEventListener('click', hideWelcomeSection);
 generate.addEventListener('click', showCharacterSection);
 generate.addEventListener('click', generateRace1);
@@ -106,8 +105,3 @@ generate.addEventListener('click', generateActivity2);
 generate.addEventListener('click', generateActivity3);
 generate.addEventListener('click', generateRace2);
 generate.addEventListener('click', generateTimeFrame);
-/*const generateCharacter = () => {
-  console.log(`You are ${generateRace1(race1)} from ${adjective(adjectives)} ${environment(environments)}. You enjoy ${activity1(act1)}, ${activity2(act2)}, and ${activity3(act3)}. Your race has been at war with the ${generateRace2(race2)} society for a little over a ${timeFrame(timeFrames)}.`);
-  console.log('You are the only one who can bridge the gap between the races.');
-  console.log('Your adventure starts now!');
-}*/
