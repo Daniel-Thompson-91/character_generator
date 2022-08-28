@@ -17,7 +17,8 @@ const act1InDoc = document.getElementById('act1');
 const act2InDoc = document.getElementById('act2');
 const act3InDoc = document.getElementById('act3');
 const timeFrameInDoc = document.getElementById('timeFrame');
-const generate = document.getElementsByClassName('generate');
+const generate1 = document.getElementById('welcome-section-generate');
+const generate2 = document.getElementById('character-section-generate');
 
 const hideWelcomeSection = () => {
   generate.removeEventListener('click', hideWelcomeSection);
@@ -95,13 +96,13 @@ const generateTimeFrame = () => {
   timeFrameInDoc.innerHTML = timeGen;
 };
 
-generate[0].addEventListener('click', hideWelcomeSection);
-generate[0].addEventListener('click', showCharacterSection);
-generate.addEventListener('click', generateRace1);
-generate.addEventListener('click', generateAdjective);
-generate.addEventListener('click', generateEnvironment);
-generate.addEventListener('click', generateActivity1);
-generate.addEventListener('click', generateActivity2);
-generate.addEventListener('click', generateActivity3);
-generate.addEventListener('click', generateRace2);
-generate.addEventListener('click', generateTimeFrame);
+generate1.addEventListener('click', hideWelcomeSection);
+generate1.addEventListener('click', showCharacterSection);
+generate2.addEventListener('click', generateRace1);
+generate2.addEventListener('click', generateAdjective);
+generate2.addEventListener('click', generateEnvironment);
+generate2.addEventListener('click', generateActivity1);
+generate2.addEventListener('click', generateActivity2);
+generate2.addEventListener('click', generateActivity3);
+generate2.addEventListener('click', generateRace2);
+generate2.addEventListener('click', generateTimeFrame);
