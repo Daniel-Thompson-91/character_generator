@@ -12,10 +12,19 @@
     </header>
 
     <main>
-      <section class="character-container">
+      <section id="before-generate" class="container">
+        <section id="content-container">
+          <p>
+            Welcome to <span class="adventure-font">Character Generator</span>! To create your random character scenario, click the Generate button below.
+          </p>
+          <button type="button" class="generate">Generate</button>
+        </section>
+      </section>
+
+      <section id="after-generate" class="container">
         <section class="content-container">
           <p>
-            You are <span id="race1">_____</span> from <span id="adjective">_____</span> <span id="environment">_____</span>. You enjoy <span id="act1">_____</span>, <span id="act2">_____</span>, and <span id="act3">_____</span>. Your race has been at war with the <span id="race2">_____</span> society for more than a <span id="timeFrame">_____</span>.
+            You are <span id="race1" class="adventure-font">_____</span> from <span id="adjective" class="adventure-font">_____</span> <span id="environment" class="adventure-font">_____</span>. You enjoy <span id="act1" class="adventure-font">_____</span>, <span id="act2" class="adventure-font">_____</span>, and <span id="act3" class="adventure-font">_____</span>. Your race has been at war with the <span id="race2" class="adventure-font">_____</span> society for more than a <span id="timeFrame" class="adventure-font">_____</span>.
           </p>
           <p>
             You are the only one who can bridge the gap between the races.
@@ -23,7 +32,7 @@
           <p>
             Your adventure starts now!
           </p>
-          <button type="button" id="generate">Generate</button>
+          <button type="button" class="generate">Generate</button>
         </section>
       </section>
     </main>

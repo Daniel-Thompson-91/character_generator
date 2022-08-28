@@ -7,15 +7,25 @@ let act2 = [];
 let act3 = [];
 const timeFrames = ['day', 'week', 'month', 'year', 'decade', 'century', 'millenia', 'age'];
 
-let race1InDoc = document.getElementById('race1');
-let race2InDoc = document.getElementById('race2');
-let adjectiveInDoc = document.getElementById('adjective');
-let environmentInDoc = document.getElementById('environment');
-let act1InDoc = document.getElementById('act1');
-let act2InDoc = document.getElementById('act2');
-let act3InDoc = document.getElementById('act3');
-let timeFrameInDoc = document.getElementById('timeFrame');
-let generate = document.getElementById('generate');
+const WelcomeSection = dosument.getElementById('before-generate');
+const CharacterSection = document.getElementById('after-generate');
+const race1InDoc = document.getElementById('race1');
+const race2InDoc = document.getElementById('race2');
+const adjectiveInDoc = document.getElementById('adjective');
+const environmentInDoc = document.getElementById('environment');
+const act1InDoc = document.getElementById('act1');
+const act2InDoc = document.getElementById('act2');
+const act3InDoc = document.getElementById('act3');
+const timeFrameInDoc = document.getElementById('timeFrame');
+const generate = document.getElementsByClass('generate');
+
+const hideWelcomeSection = () => {
+  
+};
+
+const showCharacterSection = () => {
+  
+};
 
 const generateRace1 = () => {
   let race1Gen = race1[Math.floor(Math.random() * race1.length)];
@@ -84,6 +94,7 @@ const generateTimeFrame = () => {
 };
 
 //generate.onclick = runProgram;
+
 generate.addEventListener('click', generateRace1);
 generate.addEventListener('click', generateAdjective);
 generate.addEventListener('click', generateEnvironment);

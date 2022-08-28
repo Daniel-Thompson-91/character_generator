@@ -12,6 +12,7 @@ html {
   letter-spacing: 2px;;
 }
 
+/*Header*/
 h1 {
   text-align: center;
   font-size: 60px;
@@ -19,7 +20,12 @@ h1 {
   font-family: "Elvish-English";
 }
 
-.character-container {
+/*Sections and section content*/
+#after-generate {
+  display: none;
+}
+
+.container {
   display: flex;
   justify-content: center;
 }
@@ -41,12 +47,13 @@ h1 {
   font-size: 1.5rem;
 }
 
-.content-container p span {
+.adventure-font {
   font-family: "Elvish-English";
   font-size: 3rem;
 }
 
-#generate {
+/*Generate Button*/
+.generate {
   border: 1px solid darkgreen;
   border-radius: 5px;
   background-color: green;
@@ -55,11 +62,11 @@ h1 {
   box-shadow: 0 2px gray;
 }
 
-#generate:hover {
+.generate:hover {
   cursor: pointer;
 }
 
-#generate:active {
+.generate:active {
   box-shadow: none;
   padding: .2rem .45rem;
 }
