@@ -37,8 +37,8 @@ h1 {
   justify-content: space-evenly;
   width: 80%;
   max-width: 80%;
-  border: 1px solid blue;
-  background-color: aqua;
+  border: 1px solid #1C4966;
+  background-color: #45B6FE;
   padding: 2rem 0;
 }
 
@@ -54,9 +54,9 @@ h1 {
 
 /*Generate Button*/
 .generate {
-  border: 1px solid darkgreen;
+  border: 1px solid #1C4966;
   border-radius: 5px;
-  background-color: green;
+  background-color: #33D2E8;
   font-size: 16px;
   padding: .25rem .5rem;
   box-shadow: 0 2px gray;
