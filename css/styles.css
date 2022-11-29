@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Elvish-English";
-  src: url("../fonts/elven-common-speak-font/Elvencommonspeak-0WXz.ttf");
+  font-family: "Indie-Flower";
+  src: url("fonts/Indie_Flower/IndieFlower-Regular.ttf");
 }
 
 * {
@@ -18,7 +18,7 @@ h1 {
   text-align: center;
   font-size: 60px;
   font-weight: normal;
-  font-family: "Elvish-English";
+  font-family: "Indie-Flower";
 }
 
 /*Sections and section content*/
@@ -49,8 +49,8 @@ h1 {
 }
 
 .adventure-font {
-  font-family: "Elvish-English";
-  font-size: 3rem;
+  font-family: "Indie-Flower";
+  font-size: 2rem;
 }
 
 /*Generate Button*/
